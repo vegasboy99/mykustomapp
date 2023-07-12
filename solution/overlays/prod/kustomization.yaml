@@ -1,11 +1,11 @@
 bases:
 - ../../base
 
-namespace: prod
+namespace: dbean-prod
 
 patches:
 - replicas.yaml
 
 configMapGenerator:
-- name: mykustom-map
+- name: mykustom-map-dbean
   env: config.properties
